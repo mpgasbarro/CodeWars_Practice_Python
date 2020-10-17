@@ -177,19 +177,36 @@ ninja_turtle["Pizza Topping"] = [ "cheese", "Pepperoni", "Peppers"]
 # If the argument passed through is single digit or is already the maximum possible integer, your function should simply return it.
 
 
-
-
-def super_size(n):
-    num_string = str(n)
+# def super_size(n):
+#     num_string = str(n)
     
-    if len(num_string) <  2:
-        print(n)
+#     if len(num_string) <  2:
+#         print(n)
 
-    else:
-        sorted_string = sorted(num_string, reverse=True)
-        return_list = int("".join(sorted_string))
-        print (return_list)
+#     else:
+#         sorted_string = sorted(num_string, reverse=True)
+#         return_list = int("".join(sorted_string))
+#         print (return_list)
 
 
 
-super_size(4)
+# super_size(4)
+# _______________________________________________________________
+# CODEWARS PRACTICE PROBLEM - 10/16/20
+# Your task is simply to count the total number of lowercase letters in a string.
+# Example
+# lowercaseCount("abc"); ===> 3
+# lowercaseCount("abcABC123"); ===> 3
+
+# def lowercase_count(strng):
+#     new_str = sorted(strng)
+#     sum = 0
+
+#     for i in new_str:
+#         if i.islower():
+#             sum = sum +1 
+            
+
+#     return sum
+
+# lowercase_count("abcABC12&%*&@^#3")   
