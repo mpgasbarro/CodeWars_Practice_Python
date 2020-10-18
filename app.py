@@ -103,27 +103,27 @@ heroes = planeteers + rangers
 # Initialize a dictionary called `ninja_turtle` with the properties `name`, `weapon` and `radical`
 # They should have values of "Michelangelo", "Nunchuks" and a true boolean, respectively
 
-ninja_turtle = {
-    "name" : "Michaelangelo",
-    "weapon" : "Nunchuks",
-    "radical" : True,
-}
+# ninja_turtle = {
+#     "name" : "Michaelangelo",
+#     "weapon" : "Nunchuks",
+#     "radical" : True,
+# }
 
 
-# Add a key `age` to `ninja_turtle`. Set it to whatever numerical value you'd like
+# # Add a key `age` to `ninja_turtle`. Set it to whatever numerical value you'd like
 
-ninja_turtle["Age"] = 32
+# ninja_turtle["Age"] = 32
 
-# print(ninja_turtle)
+# # print(ninja_turtle)
 
-# Remove the `radical` key-value pair from `ninja_turtle`
+# # Remove the `radical` key-value pair from `ninja_turtle`
 
-ninja_turtle.pop("radical")
-# print(ninja_turtle)
+# ninja_turtle.pop("radical")
+# # print(ninja_turtle)
 
-# Add a key `pizza_toppings` to `ninja_turtle`. Set it to an list of strings (e.g., `["cheese", "pepperoni", "peppers"]`)
+# # Add a key `pizza_toppings` to `ninja_turtle`. Set it to an list of strings (e.g., `["cheese", "pepperoni", "peppers"]`)
 
-ninja_turtle["Pizza Topping"] = [ "cheese", "Pepperoni", "Peppers"]
+# ninja_turtle["Pizza Topping"] = [ "cheese", "Pepperoni", "Peppers"]
 
 # print(ninja_turtle)
 
@@ -210,3 +210,55 @@ ninja_turtle["Pizza Topping"] = [ "cheese", "Pepperoni", "Peppers"]
 #     return sum
 
 # lowercase_count("abcABC12&%*&@^#3")   
+# _______________________________________________________________________
+# CODEWARS PRACTICE PROBLEM - 10/17/20
+
+# What if we need the length of the words separated by a space to be added at the end of that same word and have it returned as an array?
+
+# add_length('apple ban') => ["apple 5", "ban 3"]
+# add_length('you will win') => ["you 3", "will 4", "win 3"]
+# Your task is to write a function that takes a String and returns an Array/list with the length of each word added to each element .
+
+# Note: String will have at least one element; words will always be separated by a space.
+
+# SOLUTION
+# def add_length(str_):
+#     new_new = []
+#     new_word = str_.split(" ")
+#     for i in new_word:
+#         length = len(i)
+#         new_new.append(i + " " + str(length))
+#     return new_new
+
+# add_length("hello there")
+
+
+
+
+# ____________________________________________________
+# CODEWARS PRACTIE PROBLEM 10/17/20
+# Given two integer arrays a, b, both of length >= 1, create a program that returns true if the sum of the squares of each element in a is strictly greater than the sum of the cubes of each element in b.
+# E.g.
+# array_madness([4, 5, 6], [1, 2, 3]) => True #because 4 ** 2 + 5 ** 2 + 6 ** 2 > 1 ** 3 + 2 ** 3 + 3 ** 3
+# Get your timer out. Are you ready? Ready, get set, GO!!!
+
+
+# SOLUTION
+# def array_madness(a,b):
+#     sumA = 0
+#     sumB = 0
+#     for i in a:
+#         sumA = sumA + (i ** 2)
+        
+#     for b in b:
+#         sumB = sumB + (b ** 2)
+    
+#     if sumA > sumB:
+#         return True
+#     else:
+#          return False
+     
+
+
+
+# array_madness([0, 4, 123], [4, 5, 6])
