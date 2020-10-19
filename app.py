@@ -274,9 +274,6 @@ heroes = planeteers + rangers
 #     for i in arr:
 #         if i >= 0:
 #             sum += i
-        
-#         if sum < 0:
-#             return 0
 
 #     return sum
 
