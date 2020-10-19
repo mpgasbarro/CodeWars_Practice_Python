@@ -262,3 +262,23 @@ heroes = planeteers + rangers
 
 
 # array_madness([0, 4, 123], [4, 5, 6])
+
+# CODEWARS PRACTICE PROBLEM 10/18/20
+#  You get an array of numbers, return the sum of all of the positives ones.
+# Example [1,-4,7,12] => 1 + 7 + 12 = 20
+# Note: if there is nothing to sum, the sum is default to 0.
+
+# SOLUTION
+# def positive_sum(arr):
+#     sum = 0
+#     for i in arr:
+#         if i >= 0:
+#             sum += i
+        
+#         if sum < 0:
+#             return 0
+
+#     return sum
+
+
+# positive_sum([-4,9,-7,-1,-2, -3])
