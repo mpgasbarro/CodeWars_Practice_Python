@@ -168,6 +168,10 @@ heroes = planeteers + rangers
 #     print("you can't drink")
 # else:
 #     print("come on in and get hammered")
+# 
+# 
+# 
+# 
 # _______________________________________________________________________________
 # CODEWARS PRACTICE PROBLEM - 10/16/20
 # Write a function that rearranges an integer into its largest possible value.
@@ -191,6 +195,11 @@ heroes = planeteers + rangers
 
 
 # super_size(4)
+
+
+
+
+
 # _______________________________________________________________
 # CODEWARS PRACTICE PROBLEM - 10/16/20
 # Your task is simply to count the total number of lowercase letters in a string.
@@ -210,6 +219,11 @@ heroes = planeteers + rangers
 #     return sum
 
 # lowercase_count("abcABC12&%*&@^#3")   
+
+
+
+
+
 # _______________________________________________________________________
 # CODEWARS PRACTICE PROBLEM - 10/17/20
 
@@ -258,10 +272,10 @@ heroes = planeteers + rangers
 #     else:
 #          return False
      
-
-
-
 # array_madness([0, 4, 123], [4, 5, 6])
+# _________________________________________________________________-
+
+
 
 # CODEWARS PRACTICE PROBLEM 10/18/20
 #  You get an array of numbers, return the sum of all of the positives ones.
@@ -280,6 +294,8 @@ heroes = planeteers + rangers
 
 # positive_sum([-4,9,-7,-1,-2, -3])
 # /-_____________________________________________________
+
+
 
 
 # CODEWARS PROBLEM - 10/20/20
@@ -321,3 +337,40 @@ heroes = planeteers + rangers
 #     return sum 
 
 # count_sheep(5)
+
+
+
+
+# _______________________________________________________________
+
+# CODEWARS PROBLEM 10/20/20
+
+
+# Challenge:
+
+# Given a two-dimensional array, return a new array which carries over only those arrays from the original, which were not empty and whose items are all of the same type (i.e. homogenous). For simplicity, the arrays inside the array will only contain characters and integers.
+
+# Example:
+
+# Given [[1, 5, 4], ['a', 3, 5], ['b'], [], ['1', 2, 3]], your function should return [[1, 5, 4], ['b']].
+
+# Addendum:
+
+# Please keep in mind that for this kata, we assume that empty arrays are not homogenous.
+
+# The resultant arrays should be in the order they were originally in and should not have its values changed.
+
+# No implicit type casting is allowed. A subarray [1, '2'] would be considered illegal and should be filtered out.
+
+
+# ***** SOLUTION *****
+def filter_homogenous(arrays):
+    for i in arrays:
+        for x in i:
+            print(x)
+       
+
+
+
+
+filter_homogenous([[1, 5, 4], ['a', 3, 5], ['b'], [], ['1', 2, 3]])
