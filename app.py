@@ -304,3 +304,20 @@ heroes = planeteers + rangers
 #     return(arr)
 
 # count_by(2, 5)
+
+# ____________________________________________________________
+# CODEWARS PROBLEM 10/20/20
+# Task:
+# Given a non-negative integer, 3 for example, return a string with a murmur: "1 sheep...2 sheep...3 sheep...". Input will always be valid, i.e. no negative integers.
+
+
+# *****SOLUTION*****
+# def count_sheep(n):
+#     x = range(1, n + 1, 1)
+#     sum = ""
+#     for i in x:
+#         sum = sum + str(i) + " sheep..."
+        
+#     return sum 
+
+# count_sheep(5)
