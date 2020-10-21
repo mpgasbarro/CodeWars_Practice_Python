@@ -364,13 +364,43 @@ heroes = planeteers + rangers
 
 
 # ***** SOLUTION *****
-def filter_homogenous(arrays):
-    for i in arrays:
-        for x in i:
-            print(x)
+# def filter_homogenous(arrays):
+#     for i in arrays:
+#         for x in i:
+#             print(x)
        
 
 
 
 
-filter_homogenous([[1, 5, 4], ['a', 3, 5], ['b'], [], ['1', 2, 3]])
+# filter_homogenous([[1, 5, 4], ['a', 3, 5], ['b'], [], ['1', 2, 3]])
+
+# ____________________________________________________________________
+# CODEWARS PROBLEM - 10/21/20
+# Let's play! You have to return which player won! In case of a draw return Draw!.
+# Examples:
+
+# rps('scissors','paper') // Player 1 won!
+# rps('scissors','rock') // Player 2 won!
+# rps('paper','paper') // Draw!
+
+
+# ***** SOLUTION *****
+def rps(p1, p2):
+    if p1 == "scissors" and p2 == "paper":
+        return "Player 1 won!"
+    elif p1 == "paper" and p2 == "scissors":
+        return "Player 2 won!"
+    elif p1 == "rock" and p2 == "paper":
+        return "Player 2 won!"
+    elif p1 == "paper" and p2 == "rock":
+        return "Player 1 won!"
+    elif p1 == "rock" and p2 == "scissors":
+        return "Player 1 won!"
+    elif p1 == "scissors" and p2 == "rock":
+        return "PLayer 2 won!"
+    elif p1 == p2:
+        return "Draw!"
+    
+
+rps("scissors", "paper")
