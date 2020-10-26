@@ -430,10 +430,48 @@ heroes = planeteers + rangers
 
 # ***** SOLUTION *****I WAS NOT ABLE TO SOLVE THIS****
 
-def filter_homogenous(arrays):
-    return[a for a in arrays if len(set(map(type,a)))==1]
+# def filter_homogenous(arrays):
+#     return[a for a in arrays if len(set(map(type,a)))==1]
 
 
 
 
-filter_homogenous([[1, 5, 4], ['a', 3, 5], ['b'], [], ['1', 2, 3]])
+# filter_homogenous([[1, 5, 4], ['a', 3, 5], ['b'], [], ['1', 2, 3]])
+
+# CODEWARS PROBLEM - 10/26/20
+# This time no story, no theory. The examples below show you how to write function accum:
+
+# Examples:
+
+# accum("abcd") -> "A-Bb-Ccc-Dddd"
+# accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+# accum("cwAt") -> "C-Ww-Aaa-Tttt"
+# The parameter of accum is a string which includes only letters from a..z and A..Z.
+
+
+# SOLUTION  - Still working on getting last dash out of last index
+def accum(s):
+    new_Arr = []
+    val=""
+    for char in s:
+        new_Arr.append(char)
+        
+    for i in new_Arr:
+        val = new_Arr.index(i) + 1
+        new_Arr.pop(new_Arr.index(i))
+        if new_Arr[!-1]:
+            new_Arr.insert(val - 1, (i * val) +"-")
+
+    result = "".join(str(i).capitalize() for i in new_Arr)
+    
+    print(result)
+
+    
+       
+
+    
+    
+
+
+
+accum("abcd")
