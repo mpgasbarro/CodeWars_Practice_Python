@@ -364,13 +364,114 @@ heroes = planeteers + rangers
 
 
 # ***** SOLUTION *****
-def filter_homogenous(arrays):
-    for i in arrays:
-        for x in i:
-            print(x)
+# def filter_homogenous(arrays):
+#     for i in arrays:
+#         for x in i:
+#             print(x)
        
 
 
 
 
-filter_homogenous([[1, 5, 4], ['a', 3, 5], ['b'], [], ['1', 2, 3]])
+# filter_homogenous([[1, 5, 4], ['a', 3, 5], ['b'], [], ['1', 2, 3]])
+
+# ____________________________________________________________________
+# CODEWARS PROBLEM - 10/21/20
+# Let's play! You have to return which player won! In case of a draw return Draw!.
+# Examples:
+
+# rps('scissors','paper') // Player 1 won!
+# rps('scissors','rock') // Player 2 won!
+# rps('paper','paper') // Draw!
+
+
+# ***** SOLUTION *****
+# def rps(p1, p2):
+#     if p1 == "scissors" and p2 == "paper":
+#         return "Player 1 won!"
+#     elif p1 == "paper" and p2 == "scissors":
+#         return "Player 2 won!"
+#     elif p1 == "rock" and p2 == "paper":
+#         return "Player 2 won!"
+#     elif p1 == "paper" and p2 == "rock":
+#         return "Player 1 won!"
+#     elif p1 == "rock" and p2 == "scissors":
+#         return "Player 1 won!"
+#     elif p1 == "scissors" and p2 == "rock":
+#         return "PLayer 2 won!"
+#     elif p1 == p2:
+#         return "Draw!"
+    
+
+# rps("scissors", "paper")
+
+# ____________________________________________________________
+
+
+# CODEWARS PROBLEM 10/22/20
+
+
+# Challenge:
+
+# Given a two-dimensional array, return a new array which carries over only those arrays from the original, which were not empty and whose items are all of the same type (i.e. homogenous). For simplicity, the arrays inside the array will only contain characters and integers.
+
+# Example:
+
+# Given [[1, 5, 4], ['a', 3, 5], ['b'], [], ['1', 2, 3]], your function should return [[1, 5, 4], ['b']].
+
+# Addendum:
+
+# Please keep in mind that for this kata, we assume that empty arrays are not homogenous.
+
+# The resultant arrays should be in the order they were originally in and should not have its values changed.
+
+# No implicit type casting is allowed. A subarray [1, '2'] would be considered illegal and should be filtered out.
+
+
+# ***** SOLUTION *****I WAS NOT ABLE TO SOLVE THIS****
+
+# def filter_homogenous(arrays):
+#     return[a for a in arrays if len(set(map(type,a)))==1]
+
+
+
+
+# filter_homogenous([[1, 5, 4], ['a', 3, 5], ['b'], [], ['1', 2, 3]])
+
+# CODEWARS PROBLEM - 10/26/20
+# This time no story, no theory. The examples below show you how to write function accum:
+
+# Examples:
+
+# accum("abcd") -> "A-Bb-Ccc-Dddd"
+# accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+# accum("cwAt") -> "C-Ww-Aaa-Tttt"
+# The parameter of accum is a string which includes only letters from a..z and A..Z.
+
+
+# SOLUTION  - Still working on getting last dash out of last index
+def accum(s):
+    new_Arr = []
+    val=""
+    for char in s:
+        new_Arr.append(char)
+        
+    for i in new_Arr:
+        val = new_Arr.index(i) + 1
+        new_Arr.pop(new_Arr.index(i))
+        if new_Arr[!-1]:
+            new_Arr.insert(val - 1, (i * val) +"-")
+
+    result = "".join(str(i).capitalize() for i in new_Arr)
+    
+    print(result)
+
+    
+       
+
+    
+    
+
+
+
+accum("abcd")
