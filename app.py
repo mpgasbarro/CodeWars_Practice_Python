@@ -458,20 +458,16 @@ def accum(s):
         
     for i in new_Arr:
         val = new_Arr.index(i) + 1
+        last_Ind = new_Arr[len(new_Arr) -1]
+        ind = len(new_Arr)
         new_Arr.pop(new_Arr.index(i))
-        if new_Arr[!-1]:
-            new_Arr.insert(val - 1, (i * val) +"-")
-
+        new_Arr.insert(val - 1, (i * val) +"-")
+        
+    new_Arr.pop(len(new_Arr) -1)
+    new_Arr.append(last_Ind * ind)
     result = "".join(str(i).capitalize() for i in new_Arr)
+   
     
-    print(result)
-
-    
-       
-
-    
-    
-
-
+    return result
 
 accum("abcd")
