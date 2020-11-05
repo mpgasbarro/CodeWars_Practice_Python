@@ -479,16 +479,47 @@ heroes = planeteers + rangers
 
 # Note: If the number is a multiple of both 3 and 5, only count it once. Also, if a number is negative, return 0(for languages that do have them)
 
-def solution(number):
-    sum = 0
-    for i in range(0, number):
-        if i % 3 == 0 and i % 5 != 0:
-            sum += i
-        if i % 5 == 0 and i % 3 != 0:
-            sum += i
-        if i % 5 == 0 and i % 3 == 0:
-            sum += i
 
-    print(sum)
 
-solution(16)
+# ***** SOLUTION *****
+
+
+# def solution(number):
+#     sum = 0
+#     for i in range(0, number):
+#         if i % 3 == 0 and i % 5 != 0:
+#             sum += i
+#         if i % 5 == 0 and i % 3 != 0:
+#             sum += i
+#         if i % 5 == 0 and i % 3 == 0:
+#             sum += i
+
+#     print(sum)
+
+# solution(16)
+
+# __________________________________________________________________________
+
+# CODEWAR PRACTICE - 11/05/20
+# Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed (Just like the name of this Kata). Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
+
+# Examples: spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw" spinWords( "This is a test") => returns "This is a test" spinWords( "This is another test" )=> returns "This is rehtona test"
+
+
+#  ***** SOLUTION *****
+
+def spin_words(sentence):
+    newWord = sentence.split(" ")
+    newArr = []
+    for i in newWord:
+        if(len(i) >= 5):
+            indexx = newWord.index(i)
+            newWord.pop(indexx)
+            newVal = i[::-1]
+            newWord.insert(indexx, newVal)
+    
+    return(" ".join(newWord))
+
+    
+
+spin_words("hello there how are you doings")
