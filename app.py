@@ -549,20 +549,32 @@ heroes = planeteers + rangers
 
 
 # ***** SOLUTION *****
-def get_middle(s):
-    length_of_word = len(s)
-    middle_index = 0
+# def get_middle(s):
+#     length_of_word = len(s)
+#     middle_index = 0
 
-    for i in s:
-        print(i)
+#     for i in s:
+#         print(i)
 
-    if length_of_word % 2 == 0:
-        print("yo yo")
-    elif length_of_word % 2 != 0:
-        print ("suhhhhh")
-
-
+#     if length_of_word % 2 == 0:
+#         print("yo yo")
+#     elif length_of_word % 2 != 0:
+#         print ("suhhhhh")
 
 
 
-get_middle("helloz")
+
+
+# get_middle("helloz")
+
+# __________________________________________________________________
+print("Welcome to the the Club! What is your age?")
+age = int(input())
+
+if age >= 18 and age < 21:
+    print("YOu can come in but you cant drink")
+elif age < 18:
+    print("You're too young, LATER")
+else:
+    print(" Come get drunk"
+    )
