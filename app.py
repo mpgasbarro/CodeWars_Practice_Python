@@ -614,3 +614,12 @@ heroes = planeteers + rangers
 
 
 # positive_sum([1,-4,7,12])
+# ____________________________________________________________
+def bool_to_word(boolean):
+    if boolean == True:
+        print("Yes")
+    else:
+        print("No")
+
+
+bool_to_word(False)
