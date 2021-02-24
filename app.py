@@ -615,11 +615,49 @@ heroes = planeteers + rangers
 
 # positive_sum([1,-4,7,12])
 # ____________________________________________________________
-def bool_to_word(boolean):
-    if boolean == True:
-        print("Yes")
-    else:
-        print("No")
+# def bool_to_word(boolean):
+#     if boolean == True:
+#         print("Yes")
+#     else:
+#         print("No")
 
 
-bool_to_word(False)
+# bool_to_word(False)
+
+# ___________________________________________________________
+# def warn_the_sheep(queue):
+#     queue.reverse()
+    
+#     for index, i in enumerate(queue):
+#         if index == 0 and i == "wolf":
+#             print("Pls go away and stop eating my sheep")
+#         elif i == "wolf":
+#             print(f"Oi! Sheep number {index}! You are about to be eaten by a wolf!")
+
+
+
+# warn_the_sheep(["sheep", "sheep", "sheep", "wolf", "sheep"])
+# # _________________________________________________________________
+# Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case).
+
+# Examples
+# "the-stealth-warrior" gets converted to "theStealthWarrior"
+# "The_Stealth_Warrior" gets converted to "TheStealthWarrior"
+
+
+def to_camel_case(text):
+    split = list(text)
+
+    for index, i in enumerate(split):
+        if i == "-" or i == "_":
+            new_letter = split[index + 1]
+            split.pop(index)
+            split.pop(index)
+            split.insert(index, new_letter.capitalize())
+
+    final_string = "".join(split)
+    print(final_string)
+    
+
+
+to_camel_case("The_Stealth_Warrior")
