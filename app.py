@@ -568,13 +568,49 @@ heroes = planeteers + rangers
 # get_middle("helloz")
 
 # __________________________________________________________________
-print("Welcome to the the Club! What is your age?")
-age = int(input())
+# print("Welcome to the the Club! What is your age?")
+# age = int(input())
 
-if age >= 18 and age < 21:
-    print("YOu can come in but you cant drink")
-elif age < 18:
-    print("You're too young, LATER")
-else:
-    print(" Come get drunk"
-    )
+# if age >= 18 and age < 21:
+#     print("YOu can come in but you cant drink")
+# elif age < 18:
+#     print("You're too young, LATER")
+# else:
+#     print(" Come get drunk"
+#     )
+
+
+# planeteers = ["Earth", "Wind", "Captain Planet", "Fire", "Water"]
+# rangers = ["Red", "Blue", "Pink", "Yellow", "Black"]
+# planeteers.append("Heart")
+# planeteers.pop(2)
+
+
+# heroes = planeteers.append(rangers)
+
+# print(heroes)
+# ___________________________________________________________________
+# Building up on Pzython
+# for x in range(1,5):
+#     print(x)
+
+# def summation(num):
+#     sum = 0
+#     for i in range(1, num + 1):
+#         sum += i
+
+#     return sum
+
+# summation(8)
+
+# _________________________________________________________________
+# def positive_sum(arr):
+#     sum = 0
+#     for i in arr:
+#         if i > 0:
+#             sum += i
+           
+#     return sum
+
+
+# positive_sum([1,-4,7,12])
