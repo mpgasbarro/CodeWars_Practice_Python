@@ -615,11 +615,25 @@ heroes = planeteers + rangers
 
 # positive_sum([1,-4,7,12])
 # ____________________________________________________________
-def bool_to_word(boolean):
-    if boolean == True:
-        print("Yes")
-    else:
-        print("No")
+# def bool_to_word(boolean):
+#     if boolean == True:
+#         print("Yes")
+#     else:
+#         print("No")
 
 
-bool_to_word(False)
+# bool_to_word(False)
+
+# ___________________________________________________________
+def warn_the_sheep(queue):
+    queue.reverse()
+    
+    for index, i in enumerate(queue):
+        if index == 0 and i == "wolf":
+            print("Pls go away and stop eating my sheep")
+        elif i == "wolf":
+            print(f"Oi! Sheep number {index}! You are about to be eaten by a wolf!")
+
+
+
+warn_the_sheep(["sheep", "sheep", "sheep", "wolf", "sheep"])
