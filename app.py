@@ -645,19 +645,45 @@ heroes = planeteers + rangers
 # "The_Stealth_Warrior" gets converted to "TheStealthWarrior"
 
 
-def to_camel_case(text):
-    split = list(text)
+# def to_camel_case(text):
+#     split = list(text)
 
-    for index, i in enumerate(split):
-        if i == "-" or i == "_":
-            new_letter = split[index + 1]
-            split.pop(index)
-            split.pop(index)
-            split.insert(index, new_letter.capitalize())
+#     for index, i in enumerate(split):
+#         if i == "-" or i == "_":
+#             new_letter = split[index + 1]
+#             split.pop(index)
+#             split.pop(index)
+#             split.insert(index, new_letter.capitalize())
 
-    final_string = "".join(split)
-    print(final_string)
+#     final_string = "".join(split)
+#     print(final_string)
     
 
 
-to_camel_case("The_Stealth_Warrior")
+# to_camel_case("The_Stealth_Warrior")
+
+# ________________________________________________________
+# CodeWars - 2/26 - 
+# The function 'fibonacci' should return an array of fibonacci numbers. The function takes a number as an argument to decide how many no. of elements to produce. If the argument is less than or equal to 0 then return empty array
+
+# Example:
+
+# fibonacci(4) # should return  [0,1,1,2]
+# fibonacci(-1) # should return []
+
+# ***** SOLUTION *****
+# 
+def fibonacci(n):
+    new_arr = [0, 1]
+    sum = 0
+    if n <= 0:
+        return []
+    else:
+        for index, i in enumerate(range(n)):
+            if not i == 0:
+                sum = new_arr[index] + new_arr[i - 1]
+                new_arr.append(sum)
+    return (new_arr)
+
+
+fibonacci(5)
